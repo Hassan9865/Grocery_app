@@ -60,8 +60,8 @@ class _Screen1State extends State<Screen1> {
               height: 25,
             ),
             Container(
-              width: 340,
-              height: 480,
+              width: 380,
+              height: 515,
               decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -73,17 +73,17 @@ class _Screen1State extends State<Screen1> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
-                    height: 90,
+                    height: 123,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: home_item.length,
                       itemBuilder: ((context, index) {
                         return Container(
                           margin: EdgeInsets.all(8.0),
-                          height: 128,
+                          height: 150,
                           width: 194,
                           decoration: BoxDecoration(
-                            color: Colors.green.shade300,
+                            color: Color(0xffF9B023),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: Column(
@@ -92,12 +92,20 @@ class _Screen1State extends State<Screen1> {
                               Padding(
                                 padding: EdgeInsets.all(15),
                                 child: Center(
-                                  child: Text(
-                                    home_item[index].title,
-                                    style: const TextStyle(
-                                        fontSize: 22,
-                                        fontWeight: FontWeight.w500,
-                                        color: Colors.black),
+                                  child: RichText(
+                                    text: const TextSpan(
+                                        text: "Get             ",
+                                        style: TextStyle(
+                                          fontSize: 28,
+                                        ),
+                                        children: [
+                                          TextSpan(
+                                            text: "50% OFF",
+                                            style: TextStyle(
+                                                fontSize: 28,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ]),
                                   ),
                                 ),
                               ),
@@ -138,7 +146,8 @@ class _Screen1State extends State<Screen1> {
                               Image.network(
                                 home_item[index].imageUrl,
                                 fit: BoxFit.cover,
-                                height: 100,
+                                height: 194,
+                                cacheWidth: 128,
                                 width: double.infinity,
                               ),
                               SizedBox(height: 10),

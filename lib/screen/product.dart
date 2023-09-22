@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mini_project/Listdata/GridDB.dart';
+import 'package:mini_project/Listdata/productDB.dart';
 
 class AppProduct extends StatefulWidget {
   const AppProduct({super.key});
@@ -43,12 +44,12 @@ class _AppProductState extends State<AppProduct> {
             height: 60,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: 6,
+              itemCount: Product_Items.length,
               itemBuilder: ((context, index) {
                 return Container(
                   margin: EdgeInsets.all(8.0),
                   height: 36,
-                  width: 84,
+                  width: 100,
                   decoration: BoxDecoration(
                     color: Color(0xffE4DDCB),
                     borderRadius: BorderRadius.circular(8),
@@ -60,7 +61,7 @@ class _AppProductState extends State<AppProduct> {
                         padding: EdgeInsets.all(15),
                         child: Center(
                           child: Text(
-                            items[index].title,
+                            Product_Items[index].title,
                             style: const TextStyle(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w500,

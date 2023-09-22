@@ -12,7 +12,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[600],
+      backgroundColor: Color(0xff2A4BA0),
       body: SafeArea(
         child: Column(
           children: [
@@ -49,7 +49,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               children: [
                 Center(
                   child: Icon(
-                    Icons.apple_outlined,
+                    Icons.shopping_cart_checkout_sharp,
                     size: 200,
                   ),
                 ),
@@ -66,7 +66,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       builder: (context) => const Bottombar(),
                     ));
               },
-              child: const Text("Get started -> "),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+              ),
+              child: const Text(
+                "Get started -> ",
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ],
         ),
