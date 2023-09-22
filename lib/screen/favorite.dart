@@ -187,7 +187,7 @@ class _FavouritePageState extends State<FavouritePage> {
                             ),
                             Padding(
                               padding: EdgeInsets.only(
-                                left: 200,
+                                left: 190,
                                 top: 20,
                               ),
                               child: Text("\$35.00"),
@@ -208,7 +208,7 @@ class _FavouritePageState extends State<FavouritePage> {
                             ),
                             Padding(
                               padding: EdgeInsets.only(
-                                left: 200,
+                                left: 190,
                                 top: 20,
                               ),
                               child: Text("\$35.00"),
@@ -229,7 +229,7 @@ class _FavouritePageState extends State<FavouritePage> {
                             ),
                             Padding(
                               padding: EdgeInsets.only(
-                                left: 220,
+                                left: 210,
                                 top: 20,
                               ),
                               child: Text("\$35.00"),
