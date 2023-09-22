@@ -61,7 +61,7 @@ class _Screen1State extends State<Screen1> {
             ),
             Container(
               width: 380,
-              height: 515,
+              height: 480,
               decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mini_project/screen/more.dart';
 import 'package:mini_project/screen/product.dart';
 import 'package:mini_project/screen/screen1.dart';
 import 'package:mini_project/screen/category.dart';
@@ -12,7 +13,12 @@ class Bottombar extends StatefulWidget {
 
 class _BottombarState extends State<Bottombar> {
   int myindex = 0;
-  List<Widget> widgetList = const [Screen1(), ShopCategory(), AppProduct()];
+  List<Widget> widgetList = const [
+    Screen1(),
+    ShopCategory(),
+    AppProduct(),
+    More(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

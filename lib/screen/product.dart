@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mini_project/Listdata/GridDB.dart';
 import 'package:mini_project/Listdata/productDB.dart';
+import 'package:mini_project/screen/favorite.dart';
 
 class AppProduct extends StatefulWidget {
   const AppProduct({super.key});
@@ -87,24 +88,34 @@ class _AppProductState extends State<AppProduct> {
               itemCount: items.length,
               shrinkWrap: true,
               itemBuilder: (BuildContext context, int index) {
-                return Card(
-                  elevation: 4.0,
-                  child: Column(
-                    children: [
-                      Image.network(
-                        items[index].imageUrl,
-                        fit: BoxFit.cover,
-                        height: 100,
-                        width: double.infinity,
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: ((context) => FavouritePage()),
                       ),
-                      SizedBox(height: 10),
-                      Text(items[index].title,
-                          style: TextStyle(fontWeight: FontWeight.bold)),
-                      SizedBox(height: 10),
-                      Text(items[index].description),
-                      SizedBox(height: 10),
-                      Text(items[index].price),
-                    ],
+                    );
+                  },
+                  child: Card(
+                    elevation: 4.0,
+                    child: Column(
+                      children: [
+                        Image.network(
+                          items[index].imageUrl,
+                          fit: BoxFit.cover,
+                          height: 100,
+                          width: double.infinity,
+                        ),
+                        SizedBox(height: 10),
+                        Text(items[index].title,
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                        SizedBox(height: 10),
+                        Text(items[index].description),
+                        SizedBox(height: 10),
+                        Text(items[index].price),
+                      ],
+                    ),
                   ),
                 );
               },

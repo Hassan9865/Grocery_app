@@ -67,7 +67,7 @@ class _ShopCategoryState extends State<ShopCategory> {
           ),
           Container(
             width: 380,
-            height: 445,
+            height: 410,
             decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(
