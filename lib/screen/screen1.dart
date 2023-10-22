@@ -12,7 +12,7 @@ class _Screen1State extends State<Screen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[600],
+      backgroundColor: Color(0xff2A4BA0),
       body: SafeArea(
         child: Column(
           children: [
@@ -61,7 +61,7 @@ class _Screen1State extends State<Screen1> {
             ),
             Container(
               width: 380,
-              height: 480,
+              height: 510,
               decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(

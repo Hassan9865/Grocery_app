@@ -26,12 +26,10 @@ final List<homeItem> home_item = [
     imageUrl: 'https://m.media-amazon.com/images/I/61AigOH-ptL._AC_SX385_.jpg',
   ),
   homeItem(
-    title: 'Green Tea',
-    description: 'Organic',
-    price: "Rs 83",
-    imageUrl:
-        'https://www.tazaonline.com/wp-content/uploads/2022/04/Lipton-Green-Tea-Pure-Light-25-Bags.jpg',
-  ),
+      title: 'Green Tea',
+      description: 'Organic',
+      price: "Rs 83",
+      imageUrl: 'https://cdn.somahar.xyz/product/y7yDN39oZbvMZa3DEypR2655.jpg'),
   homeItem(
     title: 'fish',
     description: 'from sea',

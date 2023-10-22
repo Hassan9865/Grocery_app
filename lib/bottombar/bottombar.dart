@@ -27,7 +27,7 @@ class _BottombarState extends State<Bottombar> {
         index: myindex,
       ),
       bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.indigo,
+          backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
           onTap: (index) {
             setState(() {
