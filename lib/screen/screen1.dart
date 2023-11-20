@@ -12,7 +12,7 @@ class _Screen1State extends State<Screen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff2A4BA0),
+      backgroundColor: Colors.blue[600],
       body: SafeArea(
         child: Column(
           children: [
