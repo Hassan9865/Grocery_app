@@ -24,7 +24,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 TextSpan(
                   children: [
                     const TextSpan(
-                        text: 'Your holiday shopping delivered to Screen one ',
+                        text: 'Your holiday Shopping delivered to Screen one ',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 34,
